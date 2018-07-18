@@ -44,6 +44,10 @@ public class Note_Xq extends AppCompatActivity {
                 // DataEdit.putInt("all", 1);
                 DataEdit.commit();
                 Snackbar.make(view, "已保存", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                Intent i = new Intent();
+                i.setClass(Note_Xq.this, Note.class);
+                startActivity(i);
+                finish();
                 //Toast.makeText(getApplicationContext(), "已保存", 1).show();
             }
         });

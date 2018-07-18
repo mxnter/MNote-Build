@@ -40,13 +40,20 @@ public class Note_Xj extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+
                 SharedPreferences.Editor DataEdit = NoteData.edit();
-                DataEdit.putString("NoteName" + no, e_name.getText().toString());
-                DataEdit.putString("NoteContent" + no, e_content.getText().toString());
-                // DataEdit.putInt("all", 1);
+                DataEdit.putString("NoteName" + (no), e_name.getText().toString());
+                DataEdit.putString("NoteContent" + (no), e_content.getText().toString());
+                DataEdit.putInt("all", no+1);
                 DataEdit.commit();
+                Toast.makeText(getApplicationContext(), "已保存", 1).show();
                 Snackbar.make(view, "已保存", Snackbar.LENGTH_LONG).setAction("Action", null).show();
-                //Toast.makeText(getApplicationContext(), "已保存", 1).show();
+
+                Intent i = new Intent();
+                i.setClass(Note_Xj.this, Note.class);
+                startActivity(i);
+                finish();
             }
         });
 
