@@ -36,13 +36,13 @@ public class Note_Gy extends AppCompatActivity {
 
 
     public static final int SHOW_RESPONSE = 0;
-    String strbb="0.0.0.1";
+    String strbb="Build-0.0.0.1";
     String strgy="M’Note 是一款加密的个人笔记的安卓APP";
     WebView tz;
     TextView gy;
     //int ail=0;
     //String strbb;
-    String lsv="0.0.0.1";
+    String lsv="Build-0.0.0.1";
     SharedPreferences Start, Data;
 
 
@@ -85,12 +85,12 @@ public class Note_Gy extends AppCompatActivity {
 
                         public void onClick(DialogInterface arg0, int arg1) {
                             // TODO Auto-generated method stub
-                          //  Intent intent = new Intent();
-                            //intent.setAction("android.intent.action.VIEW");
-                           // Toast.makeText(getApplicationContext(), "我们将跳转到下载页面", Toast.LENGTH_SHORT).show();
-                           // Uri content_url = Uri.parse("https://loswkl.win/lnotexz");    //http://a.loswkl.xyz/lapp/LStudy.ap
-                          //  intent.setData(content_url);
-                          //  startActivity(intent);
+                            Intent intent = new Intent();
+                            intent.setAction("android.intent.action.VIEW");
+                           Toast.makeText(getApplicationContext(), "我们将跳转到下载页面", Toast.LENGTH_SHORT).show();
+                            Uri content_url = Uri.parse("https://mxnter.github.io/information/MNote/app/MNote.apk");    //http://a.loswkl.xyz/lapp/LStudy.ap
+                           intent.setData(content_url);
+                            startActivity(intent);
 
 
                         }
