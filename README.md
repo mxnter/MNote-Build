@@ -24,16 +24,16 @@ M’Note 是一款加密的个人笔记的安卓APP 预览阶段
 当前软件是由[L’Note](https://github.com/loswkl/LNote-Preview) 继续开发的下一版本
 
 # 二丶效果图
-![欢迎界面](screenshots/1.png)
-![注册界面](screenshots/2.png)
-![登陆界面](screenshots/3.png)
-![Note界面](screenshots/4.png)
-![个人信息](screenshots/5.png)
-![关于更新](screenshots/6.png)
-![更新提示](screenshots/7.png)
-![新建Note](screenshots/8.png)
-![查看编辑](screenshots/9.png)
-![删除提示](screenshots/10.png)
+![欢迎界面](screenshots/1.png =50)
+![注册界面](screenshots/2.png =50)
+![登陆界面](screenshots/3.png =50)
+![Note界面](screenshots/4.png =50)
+![个人信息](screenshots/5.png =50)
+![关于更新](screenshots/6.png =50)
+![更新提示](screenshots/7.png =50)
+![新建Note](screenshots/8.png =50)
+![查看编辑](screenshots/9.png =50)
+![删除提示](screenshots/10.png =50)
 
 # 三丶更新日志
 
