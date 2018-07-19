@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".s">
+    android:background="#4169E1"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Note_Zl"
+    tools:showIn="@layout/activity_note__zl">
+
 
     <LinearLayout
         android:id="@+id/linearLayout1"
-        android:layout_width="289dp"
-        android:layout_height="334dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginBottom="8dp"
@@ -36,7 +40,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/editText1"
+                android:id="@+id/zl_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -56,13 +60,14 @@
 
 
             <EditText
-                android:id="@+id/editText4"
+                android:id="@+id/zl_phone"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
                 android:hint="手机号"
+                android:inputType="number"
                 android:singleLine="true" />
         </LinearLayout>
 
@@ -71,7 +76,7 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/editText2"
+                android:id="@+id/zl_pasword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -83,5 +88,4 @@
         </LinearLayout>
 
     </LinearLayout>
-
-</android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

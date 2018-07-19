@@ -57,7 +57,7 @@ public class Note_Zc extends AppCompatActivity {
                     DataEdit.putString("UserName", e_yhm.getText().toString());
                     DataEdit.putString("Password", e_mm.getText().toString());
 
-                    DataEdit.commit();
+
 
 
                     //生成重置代码
@@ -70,9 +70,10 @@ public class Note_Zc extends AppCompatActivity {
                     Toast.makeText(Note_Zc.this, "重置代码为：" + x + " 请妥善保管【M'Note】", 1).show();
                     SharedPreferences.Editor StartEdit = Start.edit();
                     StartEdit.putString("Start", "ok");
-                    StartEdit.putString("telephone", e_sjh.getText().toString());
+                    DataEdit.putString("telephone", e_sjh.getText().toString());
                     StartEdit.putString("Reset", x);
                     StartEdit.commit();
+                    DataEdit.commit();
                     Toast.makeText(Note_Zc.this, "注册成功", 1).show();
                     Intent i = new Intent();
                     i.setClass(Note_Zc.this, Note_Hi.class);

@@ -45,7 +45,7 @@ public class Note extends AppCompatActivity {
     int all;
     SharedPreferences NoteData;
     public static  String str1[], str2[];
-    ImageView i_gy,i_xj;
+    ImageView i_gy,i_zl;
     //FloatingActionButton FAB;
 
     @Override
@@ -74,7 +74,7 @@ public class Note extends AppCompatActivity {
 
 
         i_gy=(ImageView)findViewById(R.id.gy);
-       // i_xj=(ImageView)findViewById(R.id.imageView2);
+        i_zl=(ImageView)findViewById(R.id.zl);
 
         l = (ListView) findViewById(R.id.listView1);
 
@@ -199,6 +199,16 @@ public class Note extends AppCompatActivity {
                 // TODO Auto-generated method stub
                 Intent i = new Intent();
                 i.setClass(Note.this, Note_Gy.class);
+                startActivity(i);
+
+            }
+        });
+        i_zl.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View arg0) {
+                // TODO Auto-generated method stub
+                Intent i = new Intent();
+                i.setClass(Note.this, Note_Zl.class);
                 startActivity(i);
 
             }

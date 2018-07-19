@@ -46,6 +46,10 @@
         <activity
             android:name=".Note_Xj"
             android:label="@string/title_activity_note__xj"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Note_Zl"
+            android:label="@string/title_activity_note__zl"
             android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
     </application>
 

@@ -67,15 +67,15 @@ public class Note_Cz extends AppCompatActivity {
                 // TODO Auto-generated method stub
                 String x = Start.getString("Reset", "Loswkl").toString();
 
-                if (Start.getString("telephone", "") == "") {
+                if (Data.getString("telephone", "") == "") {
 
                     SmsManager smss = SmsManager.getDefault();
-                    smss.sendTextMessage(Start.getString("telephone", telephonyManager.getLine1Number().toString()).toString(), null, "重置代码为：" + x + " 请妥善保管【L'Note】", null, null);
+                    smss.sendTextMessage(Data.getString("telephone", telephonyManager.getLine1Number().toString()).toString(), null, "重置代码为：" + x + " 请妥善保管【L'Note】", null, null);
                     Toast.makeText(Note_Cz.this, "对不起我们没有找到您注册的手机号,已将代码发送到本机", 1).show();
                 } else {
 
                     SmsManager smss = SmsManager.getDefault();
-                    smss.sendTextMessage(Start.getString("telephone", "").toString(), null, "重置代码为：" + x + " 请妥善保管【L'Note】", null, null);
+                    smss.sendTextMessage(Data.getString("telephone", "").toString(), null, "重置代码为：" + x + " 请妥善保管【L'Note】", null, null);
                     Toast.makeText(Note_Cz.this, "已发送请注意查收", 1).show();
                 }
             }
