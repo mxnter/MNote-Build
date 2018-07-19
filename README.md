@@ -4,17 +4,11 @@ M’Note 是一款加密的个人笔记的安卓APP 预览阶段
 
 
 ## 目录
-<<<<<<< HEAD
 * [一丶简述](#简述)
 * [二丶效果图](#效果图)
 * [三丶更新日志](#更新日志)
 * [四丶其他相关](#其他相关)
-=======
-* [一丶简述]（#简述）
-* [二丶效果图]（#效果图）
-* [三丶更新日志]（#更新日志）
-* [四丶其他相关]（#其他相关）
->>>>>>> cae42f2a2a195113078ba01dfc36c3d80d54cb80
+
 
 # 一丶简述
 >M’Note 是一款加密的个人笔记的安卓APP 预览阶段。
@@ -27,7 +21,7 @@ M’Note 是一款加密的个人笔记的安卓APP 预览阶段
 >
 >当前版项目下载：[MNote](https://mxnter.github.io/information/MNote/app/MNote.apk)
 >
-**当前软件是由[L’Note](https://github.com/loswkl/LNote-Preview) 继续开发的下一版本
+当前软件是由[L’Note](https://github.com/loswkl/LNote-Preview) 继续开发的下一版本
 
 # 二丶效果图
 ![欢迎界面](screenshots/1.png)
@@ -60,7 +54,3 @@ M’Note 是一款加密的个人笔记的安卓APP 预览阶段
 # 四丶其他相关
 
 ## 欢迎下载使用，如需反馈请联系 github@mter.xyz
-<<<<<<< HEAD
-=======
-
->>>>>>> cae42f2a2a195113078ba01dfc36c3d80d54cb80
