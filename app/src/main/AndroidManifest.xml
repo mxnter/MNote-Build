@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mxnter.mnote_build"
-    android:versionName="0.0.0.1">
+    android:versionName="0.0.0.2">
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -50,7 +50,8 @@
         <activity
             android:name=".Note_Zl"
             android:label="@string/title_activity_note__zl"
-            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Note_Gm"></activity>
     </application>
 
 </manifest>

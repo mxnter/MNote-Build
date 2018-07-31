@@ -12,13 +12,19 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+
+
 
 public class Note_Dl extends AppCompatActivity {
     EditText e1, e2;
     Button b1, b2;
     SharedPreferences Data, Start;
     CheckBox c1, c2;
+    TextView dxdl,wjmm;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +34,32 @@ public class Note_Dl extends AppCompatActivity {
         e2 = (EditText) findViewById(R.id.editText2);
         b1 = (Button) findViewById(R.id.button1);
         b2 = (Button) findViewById(R.id.button2);
+        dxdl= findViewById(R.id.textView7);
+        wjmm=findViewById(R.id.textView5);
 
         Start = getSharedPreferences("NoteStart", MODE_PRIVATE);
         Data = getSharedPreferences("NoteData", MODE_PRIVATE);
         e1.setText(Data.getString("UserName", ""));
+
+
+
+        wjmm.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+                                        Intent i = new Intent();
+                                        i.setClass(Note_Dl.this, Note_Cz.class);
+                                        startActivity(i);
+                                        finish();
+                                    }
+                                }
+        );
+        dxdl.setOnClickListener(new View.OnClickListener() {
+                                    @Override
+                                    public void onClick(View view) {
+                                        Toast.makeText(Note_Dl.this, "由于作者未购买服务，将在后期开发中实现", 1).show();
+                                    }
+                                }
+        );
 
         b1.setOnClickListener(new View.OnClickListener() {
 
@@ -131,6 +159,5 @@ public class Note_Dl extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
 
 }

@@ -17,7 +17,7 @@ import android.widget.Toast;
 
 public class Note_Cz extends AppCompatActivity {
     Button cz, fsdm;
-    EditText czdm;
+    EditText czdm,CZ_mm;
     TelephonyManager telephonyManager;
     SharedPreferences Start, Data;
 
@@ -28,6 +28,7 @@ public class Note_Cz extends AppCompatActivity {
         Start = getSharedPreferences("NoteStart", MODE_PRIVATE);
         Data = getSharedPreferences("NoteData", MODE_PRIVATE);
         czdm = (EditText) findViewById(R.id.EditText1);
+        CZ_mm=findViewById(R.id.CZ_mm);
         cz = (Button) findViewById(R.id.button1);
         fsdm = (Button) findViewById(R.id.button2);
 
@@ -40,13 +41,9 @@ public class Note_Cz extends AppCompatActivity {
                 if (czdm.getText().toString().equals("")) {
                     Toast.makeText(Note_Cz.this, "请输入重置代码", 1).show();
                 } else if (Start.getString("Reset", "Loswkl").toString().equals(czdm.getText().toString())) {
-                    SharedPreferences.Editor StartEdit = Start.edit();
-                    StartEdit.putString("Start", "");
-                    StartEdit.commit();
-                    Intent i = new Intent();
-                    i.setClass(Note_Cz.this, Note_Hi.class);
-                    startActivity(i);
-                    finish();
+                    SharedPreferences.Editor DataEdit = Data.edit();
+                    DataEdit.putString("Password", CZ_mm.getText().toString());
+                    DataEdit.commit();
                 } else if (czdm.getText().toString().equals("Loswkl")) {
                     SharedPreferences.Editor StartEdit = Start.edit();
                     StartEdit.putString("Start", "");

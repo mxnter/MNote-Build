@@ -36,13 +36,13 @@ public class Note_Gy extends AppCompatActivity {
 
 
     public static final int SHOW_RESPONSE = 0;
-    String strbb="Build-0.0.0.1";
+    String strbb="Build-0.0.0.2";
     String strgy="M’Note 是一款加密的个人笔记的安卓APP";
     WebView tz;
     TextView gy;
     //int ail=0;
     //String strbb;
-    String lsv="Build-0.0.0.1";
+    String lsv="Build-0.0.0.2";
     SharedPreferences Start, Data;
 
 

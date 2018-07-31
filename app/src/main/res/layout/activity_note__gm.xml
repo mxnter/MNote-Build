@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#4169E1"
-    tools:context=".Note_Cz">
+    tools:context=".Note_Gm">
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -52,7 +52,8 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
-                android:hint="重置代码"
+                android:hint="密码"
+                android:password="true"
                 android:singleLine="true" />
 
         </LinearLayout>
@@ -64,7 +65,7 @@
             tools:layout_editor_absoluteY="0dp">
 
             <EditText
-                android:id="@+id/CZ_mm"
+                android:id="@+id/GM_mm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
@@ -85,23 +86,13 @@
             tools:layout_editor_absoluteY="0dp">
 
             <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:background="#4169E1"
-                android:text="发送代码" />
-
-            <Button
                 android:id="@+id/button1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:background="#4169E1"
-                android:text="重置" />
+                android:text="修改密码" />
 
         </LinearLayout>
     </LinearLayout>
-
-
 </android.support.constraint.ConstraintLayout>

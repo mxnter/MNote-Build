@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="15dp"
         android:text="M&apos;Note"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:textColor="#ffffff"
@@ -115,7 +115,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:background="#4169E1"
-                android:text="重置" />
+                android:text="清空" />
 
             <Button
                 android:id="@+id/button1"
@@ -138,9 +138,10 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:text="手机号用于找回密码！"
+        android:text="手机号用于接收重置代码，用于还原忘记的密码！"
         android:textAlignment="center"
         android:textColor="#ffffff"
+        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
